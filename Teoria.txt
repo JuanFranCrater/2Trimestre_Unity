@@ -1,0 +1,35 @@
+Material Fisico->
+	Dynamic Friction-> Friccion durante el dezplazamiento del objeto.0=(Minimo)hielo 1=Maximo
+	Static Friction-> Friccion cuando el objeto esta quieto. 0=Minimo 1=Maximo
+	Bounciness-> Rebote con el objeto 0,(no pierde energia al chocar)minimo <-> 1(pierde energia cinetica al chocar), maximo.
+	Friccion Combinada-> se combina la friccion entre objetos que friccionan.
+	Friccion es una perdida de energia que tienen los distintos materiales.
+	
+*Crear capas nuevas*
+*Asignar en las propiedades fisicas del proyecto el material por defecto*
+*Valores recomendados por Unity para materiales fisicos*
+	Mucho rebote Bouncy -> 0.3 0.3 1 media max
+	Mucho rozamiento MaxFriction -> 1 1 0 max media
+	Metales Metal -> 0.15 0.15 0 min media
+	Rubber -> 1 1 0.5 max media
+	Wood -> 0.45 0.45 0 media media
+	Zero Friction -> 0 0 0 multiply media
+
+El modelo de Fricction esta usando el motor fisico de nvidia, pudiendo variar el resultado segun el equipo.
+Si la superficies es muy grande, aplicar la friccion por zonas
+
+Materiales, Shader y Texturas-> El render de un objeto depende de tres aspectos:
+	-Materiales;Los materiales son definiciones de la apariencia del objetos
+	-Shader; Los shader son scripts ya definidos que determinan el comportamiento con respecto de la luz.
+	-Texturas; Las texturas son imagenes de bit que permiten cambiar el aspecto y color del objeto
+
+	Se puede crear materiales con aspecto de liquido, vidrio, follaje, sombras. 
+
+	Shader bps-> Shader basado en la energia ???
+
+	Prefab-> prefrabicado un prefrab es una plantilla dentro de mi projecto.Esta plantilla encapsula un gameobject
+	Con determinados componenentes, como Scripts. El prefab se guarda en un fichero en el disco que podemos reutilizar
+	cuando queramos, en el momento que modificamos el prefab original, todas sus instancias toman estas modificaciones.
+ 	GameObject con sus componentes, aspecto y comportamiento->Prefab
+	En la lista de Los assets aparecen el prefab original que podra añadirse a la escena, marcados de color azul . 
+	Creo un GameObject preparando con nuestras necesidades y podremos arrastralo a los Assets y podremos guardarlo como Prefab.	

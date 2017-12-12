@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Escenas/Escena12_12Prefab/Escena/12_12Prefab.unity
+  isLoaded: 1
+  isActive: 1
